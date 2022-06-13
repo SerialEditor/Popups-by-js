@@ -28,8 +28,8 @@ img {
 
 button {
   position: absolute;
-  top: 0;
-  right: -58px;
+  top: -8px;
+  right: -66px;
   width: 58px;
   height: 58px;
   background-color: darkgrey;
