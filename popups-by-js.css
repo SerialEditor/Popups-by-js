@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  background-color: #ffcc99;
+}
+
+body > div {
+  width: 30vw;
+  height: 30vw;
+  border: 2px solid red;
+}
+
