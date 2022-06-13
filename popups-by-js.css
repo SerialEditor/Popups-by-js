@@ -2,14 +2,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: auto;
+  column-gap: 20px;
   margin: 0;
   background-color: #ffcc99;
 }
 
 body > div {
-  width: 50vw;
-  height: 50vw;
+  width: 35vw;
+  max-width: 480px;
+  height: 35vw;
+  max-height: 480px;
   border: 8px solid red;
 }
 
