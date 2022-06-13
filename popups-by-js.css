@@ -28,9 +28,9 @@ img {
 
 button {
   position: absolute;
-  top: 34px;
-  right: 34px;
-  width: 54px;
-  height: 54px;
+  top: 0;
+  right: -58px;
+  width: 58px;
+  height: 58px;
   background-color: darkgrey;
 }
