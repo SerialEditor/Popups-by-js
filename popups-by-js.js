@@ -9,4 +9,4 @@ for (let popup of popups) {
 
 for (let btn of btns) {
   popup.textContent = '';
-}
+};
