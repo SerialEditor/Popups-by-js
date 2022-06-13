@@ -3,13 +3,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding-top: 20px;
   background-color: #ffcc99;
 }
 
 body > div {
   width: 30vw;
   height: 30vw;
-  border: 2px solid red;
+  border: 8px solid red;
 }
 
