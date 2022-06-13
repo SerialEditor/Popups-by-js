@@ -10,5 +10,5 @@ for (let popup of popups) {
 
 closedButton.onclick = function() {
   popup.textContent = '';
-  closetButton.remove();
+  closedButton.remove();
 }
