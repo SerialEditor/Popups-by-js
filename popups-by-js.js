@@ -6,4 +6,9 @@ for (let popup of popups) {
     let closedButton = document.createElement('button');
     popup.append(closedButton);
   }
+};
+
+closedButton.onclick = function() {
+  popup.textContent = '';
+  closetButton.remove();
 }
