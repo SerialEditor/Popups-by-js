@@ -6,10 +6,7 @@ for (let popup of popups) {
     if (!popup.classList.contains('popup-mode-on')) {
       popup.classList.add('popup-mode-on');
       popup.append(imageWrapper);
-    } else {popup.classList.remove('popup-mode-on');
-            popup.remove(imageWrapper);
-      
-    }
+    } else {popup.classList.remove('popup-mode-on');}
   }
 };
 
