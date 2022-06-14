@@ -11,9 +11,9 @@ body {
 
 div {
   width: 35vw;
-  max-width: 480px;
+  max-width: 650px;
   height: 35vw;
-  max-height: 480px;
+  max-height: 650px;
   text-align: center;
   margin-bottom: 20px;
   border: 8px solid red;
@@ -21,10 +21,6 @@ div {
 
 .image-pointer {
   position: relative;
-}
-
-.popup-mode-on {
-  background-color: transparent;
 }
 
 .image-wrapper {
