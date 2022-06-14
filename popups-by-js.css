@@ -24,11 +24,16 @@ div {
 }
 
 .image-wrapper {
+  display: none;
   position: absolute;
   top: 45px;
   left: 50%;
   background-color: #fff;
   border-color: blue;
+}
+
+.image-wrapper.visualised {
+ display: block;
 }
 
 img {
