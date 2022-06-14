@@ -1,14 +1,16 @@
 'use strict';
-let popups = document.querySelectorAll('div');
-let btns = document.querySelectorAll('button');
+let popups = document.querySelectorAll('.image-pointer');
+let imageWrapper = document.querySelector('.image-wrapper');
 for (let popup of popups) {
   popup.onclick = function() {
-    popup.textContent = '3';
+    if (!popup.classList.contains('popup-mode-on')) {
+      popup.classList.add('popup-mode-on');
+      popup.append(imageWrapper);
+    } else {popup.classList.remove('popup-mode-on');
+            popup.remove(imageWrapper);
+      
+    }
   }
 };
 
-for (let btn of btns) {
-  btn.onclick = function() {
-    popup.textContent = '';
-  }
-};
+
