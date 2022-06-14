@@ -19,14 +19,18 @@ div {
   border: 8px solid red;
 }
 
-.popup-mode-on {
+.image-pointer {
   position: relative;
+}
+
+.popup-mode-on {
+  background-color: transparent;
 }
 
 .image-wrapper {
   position: absolute; 
   top: 45px;
-  left: 45px;
+  left: 50%;
   background-color: #fff;
   border-color: blue;
 }
