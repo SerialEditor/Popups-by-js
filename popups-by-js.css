@@ -38,11 +38,11 @@ div {
 }
 
 .prompt {
-  order: 1;
+  order: -1;
   width: 100%;
   max-width: 980px;
   height: auto;
-  padding: 20px;
+  padding: 20px 0;
   border: none;
   background-color: white;
 }
