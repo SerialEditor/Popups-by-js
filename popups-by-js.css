@@ -38,7 +38,7 @@ div {
 }
 
 .prompt {
-  order: 0;
+  order: 1;
   width: 100%;
   max-width: 980px;
   height: auto;
