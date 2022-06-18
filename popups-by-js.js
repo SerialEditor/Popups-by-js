@@ -5,7 +5,7 @@ let innerImage = document.querySelector('.inner-image');
 let gentleHint = document.querySelector('.prompt');
 for (let popup of popups) {
   popup.onclick = function() {
-    gentleHint.textContent = 'Кликни снова по блоку или изображению.';
+    gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
     if (!popup.contains(imageWrapper)) {
       innerImage.src = popup.dataset.image;
       popup.append(imageWrapper);
