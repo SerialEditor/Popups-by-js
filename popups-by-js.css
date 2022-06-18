@@ -21,12 +21,12 @@ div {
 
 .image-pointer {
   position: relative;
-  z-index: -1;
 }
 
 .image-wrapper {
   display: none;
   position: absolute;
+  z-index: 5;
   top: 45px;
   left: 50%;
   background-color: #fff;
