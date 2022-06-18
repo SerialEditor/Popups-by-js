@@ -21,7 +21,6 @@ div {
 
 .image-pointer {
   position: relative;
-  z-index: -1;
 }
 
 .image-wrapper {
@@ -35,6 +34,7 @@ div {
 
 .image-wrapper.visualised {
  display: block;
+ z-index: 3;
 }
 
 img {
