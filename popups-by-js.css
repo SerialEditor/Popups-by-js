@@ -20,7 +20,7 @@ div {
 }
 
 body div:last-child {
-  order: 1;
+  order: -1;
 }
 
 .image-pointer {
