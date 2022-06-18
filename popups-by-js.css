@@ -19,6 +19,10 @@ div {
   border: 8px solid red;
 }
 
+body div:last-child {
+  order: 1;
+}
+
 .image-pointer {
   position: relative;
 }
@@ -38,7 +42,6 @@ div {
 }
 
 .prompt {
-  order: -1;
   width: 100%;
   max-width: 980px;
   height: auto;
