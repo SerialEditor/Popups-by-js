@@ -5,6 +5,7 @@ let innerImage = document.querySelector('.inner-image');
 for (let popup of popups) {
   popup.onclick = function() {
     if (!popup.contains(imageWrapper)) {
+      innerImage.src = popup.dataset.image;
       popup.append(imageWrapper);
       if (!imageWrapper.classList.contains('visualised')) {
         imageWrapper.classList.add('visualised'); 
