@@ -19,7 +19,7 @@ div {
   border: 8px solid red;
 }
 
-body div:last-child {
+div:last-of-type {
   order: -1;
 }
 
