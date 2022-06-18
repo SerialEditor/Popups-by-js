@@ -39,7 +39,7 @@ div {
 
 div.prompt {
   width: 100%;
-  max-width: 480px;
+  max-width: 768px;
   height: auto;
   font-size: 1.5em;
   padding: 20px;
