@@ -24,6 +24,7 @@ closedButton.onclick = function() {
   if (openState == true) {
     imageWrapper.classList.remove('visualised');
     openState = false;
+  }
 };
 
 
