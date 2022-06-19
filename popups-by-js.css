@@ -42,7 +42,7 @@ button {
 }
 
 .image-wrapper {
-  display: none;
+  display: block;
   position: absolute;
   z-index: 5;
   top: 45px;
