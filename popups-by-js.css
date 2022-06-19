@@ -42,7 +42,7 @@ button {
 }
 
 .image-wrapper {
-  display: inline-block;
+  display: block;
   position: absolute;
   z-index: 5;
   top: 45px;
@@ -52,7 +52,7 @@ button {
 }
 
 .image-wrapper.visualised {
- display: block;
+  border-color: darkorange;
 }
 
 .prompt {
