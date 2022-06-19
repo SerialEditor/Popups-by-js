@@ -16,12 +16,14 @@ for (let popup of popups) {
       }
     } else if (openState == false) {
       imageWrapper.classList.add('visualised');
+      openState = true;
     }
   }
 };
 closedButton.onclick = function() {
-  imageWrapper.classList.remove('visualised');
-  openState = false;
+  if (openState == true) {
+    imageWrapper.classList.remove('visualised');
+    openState = false;
 };
 
 
