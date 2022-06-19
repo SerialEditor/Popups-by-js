@@ -2,7 +2,8 @@
 let popups = document.querySelectorAll('.image-pointer');
 let imageWrapper = document.querySelector('.image-wrapper');
 let innerImage = document.querySelector('.inner-image');
-let closingButton = document.querySelector('.closing-button');
+let closedButton = document.querySelector('.closing-button');
+let openState = true;
 let gentleHint = document.querySelector('.prompt');
 for (let popup of popups) {
   popup.onclick = function() {
@@ -13,11 +14,14 @@ for (let popup of popups) {
       if (!imageWrapper.classList.contains('visualised')) { 
         imageWrapper.classList.add('visualised'); 
       }
+    } else if (openState == false) {
+      imageWrapper.classList.add('visualised');
     }
   }
 };
-closingButton.onclick = function() {
+closedButton.onclick = function() {
   imageWrapper.classList.remove('visualised');
+  openState = false;
 };
 
 
