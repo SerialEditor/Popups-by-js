@@ -2,7 +2,7 @@
 let popups = document.querySelectorAll('.image-pointer');
 let imageWrapper = document.querySelector('.image-wrapper');
 let innerImage = document.querySelector('.inner-image');
-let closedButton = document.querySelector('.closing-button');
+let closedButton = document.querySelector('.closed-button');
 let gentleHint = document.querySelector('.prompt');
 for (let popup of popups) {
   popup.onclick = function() {
