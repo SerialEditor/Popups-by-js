@@ -10,7 +10,9 @@ for (let popup of popups) {
     if (!popup.contains(imageWrapper)) {
       innerImage.src = popup.dataset.image;
       popup.append(imageWrapper);
-      imageWrapper.classList.add('visualised'); 
+      if (!imageWrapper.classList.contains('visualised')) { 
+        imageWrapper.classList.add('visualised'); 
+      }
     } else if (popup.contains(imageWrapper) && !imageWrapper.classList.contains('visualised')) {
       imageWrapper.classList.add('visualised');
     }
