@@ -1,5 +1,6 @@
 'use strict';
 let popups = document.querySelectorAll('.image-pointer');
+let container = document.querySelector('.container'); 
 let imageWrapper = document.querySelector('.image-wrapper');
 let innerImage = document.querySelector('.inner-image');
 let closedButton = document.querySelector('.closed-button');
@@ -16,6 +17,7 @@ for (let popup of popups) {
 };
 closedButton.onclick = function() {
   imageWrapper.classList.remove('visualised'); 
+  container.append(imageWrapper);
 };
 
 
