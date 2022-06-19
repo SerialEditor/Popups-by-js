@@ -16,7 +16,6 @@ for (let popup of popups) {
 };
 closedButton.onclick = function() {
   imageWrapper.classList.remove('visualised');
-  gentleHint.append(imageWrapper);
 };
 
 
