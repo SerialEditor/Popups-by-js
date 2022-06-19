@@ -12,19 +12,13 @@ for (let popup of popups) {
       innerImage.src = popup.dataset.image;
       popup.append(imageWrapper);
       if (!imageWrapper.classList.contains('visualised')) { 
-        imageWrapper.classList.add('visualised'); 
+        imageWrapper.classList.add('visualised');
       }
-    } else if (openState == false) {
-      imageWrapper.classList.add('visualised');
-      openState = true;
     }
   }
 };
 closedButton.onclick = function() {
-  if (openState == true) {
-    imageWrapper.classList.remove('visualised');
-    openState = false;
-  }
+  imageWrapper.classList.remove('visualised');
 };
 
 
