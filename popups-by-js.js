@@ -10,9 +10,7 @@ for (let popup of popups) {
     if (!popup.contains(imageWrapper)) {
       innerImage.src = popup.dataset.image;
       popup.append(imageWrapper);
-      if (!imageWrapper.classList.contains('visualised')) { 
-        imageWrapper.classList.add('visualised');
-      }
+      imageWrapper.classList.add('visualised');
     }
   }
 };
