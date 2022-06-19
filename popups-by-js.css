@@ -37,6 +37,13 @@ button {
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
 .image-pointer {
   position: relative;
 }
