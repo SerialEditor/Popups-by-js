@@ -17,7 +17,6 @@ for (let popup of popups) {
 closedButton.onclick = function() {
   imageWrapper.classList.remove('visualised');
   popup.remove(imageWrapper);
-  document.body.append(imageWrapper);
 };
 
 
