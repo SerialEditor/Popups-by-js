@@ -24,10 +24,10 @@ div:last-of-type {
 }
 
 button {
-  width: 96px;
-  height:  96px;
-  line-height: 96px;
-  font-size: 72px; 
+  width: 128px;
+  height:  128px;
+  line-height: 128px;
+  font-size: 96px; 
   font-weight: bold;
   text-transform: uppercase;
   border: none;
