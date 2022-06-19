@@ -13,8 +13,6 @@ for (let popup of popups) {
       if (!imageWrapper.classList.contains('visualised')) { 
         imageWrapper.classList.add('visualised'); 
       }
-    } else if (popup.contains(imageWrapper) && !imageWrapper.classList.contains('visualised')) {
-      imageWrapper.classList.add('visualised');
     }
   }
 };
