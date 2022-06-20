@@ -20,6 +20,7 @@ div {
 }
 
 a {
+  display: block;
   width: 128px;
   height:  128px;
   line-height: 128px;
