@@ -17,7 +17,7 @@ for (let popup of popups) {
   }
 };
 closedButton.onclick = function() {
-  imageWrapper.classList.toggle('visualised');
+  closedButton.style.backgroundColor = 'deepskyblue';
 };
 
 
