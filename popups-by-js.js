@@ -13,7 +13,7 @@ for (let popup of popups) {
       if (!imageWrapper.classList.contains('visualised')) {
         imageWrapper.classList.add('visualised');
       }
-    } 
+    } else {imageWrapper.classList.toggle('visualised')}
   }
 };
 closedButton.onclick = function() {
