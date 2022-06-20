@@ -19,10 +19,6 @@ div {
   border: 8px solid red;
 }
 
-div:last-of-type {
-  order: -1;
-}
-
 button {
   width: 128px;
   height:  128px;
