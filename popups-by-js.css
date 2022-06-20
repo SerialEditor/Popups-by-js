@@ -51,7 +51,7 @@ button {
   display: block;
 }
 
-.prompt {
+.gentle-hint {
   position: relative;
   width: 100%;
   max-width: 980px;
