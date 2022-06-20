@@ -6,7 +6,7 @@ let closedButton = document.querySelector('.closed-button');
 let gentleHint = document.querySelector('.gentle-hint');
 for (let popup of popups) {
   popup.onclick = function() {
-    gentleHint.textContent = 'Кликни по кнопке, чтобы скрыть.';
+    gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
     if (!popup.contains(imageWrapper)) {
       innerImage.src = popup.dataset.image;
       popup.append(imageWrapper);
