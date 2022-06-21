@@ -39,6 +39,14 @@ a {
   position: relative;
 }
 
+.inner-container {
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  outline: 2px solid red;
+  outline-offset: 4px;
+}
+
 .image-wrapper {
   display: none;
   position: absolute;
