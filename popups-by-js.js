@@ -2,7 +2,7 @@
 let popups = document.querySelectorAll('.image-pointer');
 let imageWrapper = document.querySelector('.image-wrapper');
 let innerImage = document.querySelector('.inner-image');
-let closedButton = document.querySelector('.closed-button');
+let pageLink = document.querySelector('.page-link');
 let gentleHint = document.querySelector('.gentle-hint');
 for (let popup of popups) {
   popup.onclick = function() {
@@ -12,8 +12,9 @@ for (let popup of popups) {
       popup.append(imageWrapper);
       if (!imageWrapper.classList.contains('visualised')) {
         imageWrapper.classList.add('visualised');
+        pageLink.classList.add('visualised');
       }
-    } else {imageWrapper.classList.toggle('visualised')}
+    } else {imageWrapper.classList.toggle('visualised'); pageLink.classList.toggle('visualised')}
   }
 };
 closedButton.onclick = function() {
