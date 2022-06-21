@@ -1,6 +1,5 @@
 'use strict';
 let pointers = document.querySelectorAll('.image-pointer');
-let containers = document.querySelectorAll('.inner-container');
 let imageWrapper = document.querySelector('.image-wrapper');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
