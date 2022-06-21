@@ -49,7 +49,7 @@ a {
   border-color: blue;
 }
 
-.image-wrapper.visualised {
+.image-wrapper.visualised, .page-link.visualised {
   display: block;
 }
 
