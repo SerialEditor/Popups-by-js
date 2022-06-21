@@ -20,16 +20,16 @@ div {
 }
 
 a {
-  display: block;
+  display: none;
   width: 128px;
   height:  128px;
   line-height: 128px;
   font-size: 96px; 
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: none;
-  border-radius: 50%;
+  border-radius: 8px;
   color: #fff;
   background-color: darkmagenta;
   cursor: pointer;
@@ -55,7 +55,6 @@ a {
 
 
 .gentle-hint {
-  position: relative;
   width: 100%;
   max-width: 980px;
   height: auto;
