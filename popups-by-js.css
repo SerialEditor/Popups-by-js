@@ -24,7 +24,7 @@ div, a {
 }
 
 .page-link {
-  display: none;
+  display: block;
   position: absolute;
   top: 45px;
   left: 50%;
