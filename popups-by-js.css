@@ -38,12 +38,10 @@ div, a {
 }
 
 .page-link::after {
-  display: block; 
-  content: &#10144;
+  display: inline-block; 
+  content: 'Go!';
   width: 128px;
   height: 128px;
-  top: -59px;
-  right: -59px;
   font-size: 96px;
   line-height: 96px;
   text-align: center;
