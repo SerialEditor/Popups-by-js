@@ -1,20 +1,18 @@
 'use strict';
 let pointers = document.querySelectorAll('.image-pointer');
-let imageWrapper = document.querySelector('.image-wrapper');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
 let gentleHint = document.querySelector('.gentle-hint');
 for (let pointer of pointers) {
   pointer.onclick = function() {
     gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
-    if (!pointer.contains(imageWrapper)) {
+    if (!pointer.contains(pageLink)) {
       innerImage.src = pointer.dataset.image;
-      pointer.append(imageWrapper);
-      if (!imageWrapper.classList.contains('visualised')) {
-        imageWrapper.classList.add('visualised');
+      pointer.append(pageLink);
+      if (!pageLink.classList.contains('visualised')) {
         pageLink.classList.add('visualised');
       }
-    } else {imageWrapper.classList.toggle('visualised'); pageLink.classList.toggle('visualised')}
+    } else {pageLink.classList.toggle('visualised')}
   }
 };
 
