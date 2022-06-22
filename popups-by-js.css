@@ -43,15 +43,14 @@ div, a {
   z-index: 6;
   top: -45px;
   left: -45px;
-  width: 128px;
+  width: 228px;
   height: 128px;
   font-size: 96px;
-  line-height: 96px;
+  line-height: 1.2;
   text-align: center;
   color: #fff;
   background-color: darkmagenta;
   border-radius: 8px;
-  opacity: 0.5;
 }
 
 .page-link.visualised {
