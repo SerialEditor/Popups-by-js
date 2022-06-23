@@ -11,9 +11,9 @@ body {
 
 div, a {
   width: 35vw;
-  max-width: 650px;
+  max-width: 250px;
   height: 35vw;
-  max-height: 650px;
+  max-height: 250px;
   text-align: center;
   margin-bottom: 45px;
   border: 8px solid red;
@@ -38,7 +38,7 @@ div, a {
 }
 
 .page-link::after {
-  content: "Go! ";
+  content: "Go!";
   position: absolute;
   z-index: 6;
   top: -45px;
