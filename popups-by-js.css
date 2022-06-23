@@ -75,6 +75,14 @@ body {
   background-color: white;
 }
 
+.big-size-image {
+  width: 75vw;
+  max-width: 600px;
+  height: 75vw;
+  max-height: 600px;
+  border: 8px solid red;
+}
+
 img {
   display: block;
   width: 100%;
