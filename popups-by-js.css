@@ -70,6 +70,7 @@ body {
   width: 100%;
   max-width: 980px;
   height: auto;
+  margin-bottom: 64px;
   padding: 20px 0;
   border: none;
   background-color: white;
