@@ -15,12 +15,12 @@ for (let pointer of pointers) {
       }
     } else {pageLink.classList.toggle('visualised')}
   }
-  pointer.onblur = function () {
-    if (pageLink.classList.contains('visualised')) {
-      pageLink.classList.remove('visualised');
-    }
-  }
 };
 
+document.body.onclick = function() {
+  if (pageLink.classList.contains('visualised')) {
+    pageLink.classList.remove('visualised');
+  }
+}
 
 
