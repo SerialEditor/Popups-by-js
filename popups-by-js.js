@@ -21,6 +21,6 @@ document.body.onclick = function() {
   if (pageLink.classList.contains('visualised')) {
     pageLink.classList.remove('visualised');
   }
-}
+};
 
 
