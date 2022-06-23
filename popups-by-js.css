@@ -20,11 +20,11 @@ div, a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 37vw;
-  max-width: 270px;
-  min-height: 800px;
+  width: 45vw;
+  max-width: 320px;
+  height: 145vw;
   margin: 0 auto;
-  border: 4px solid darkgray;
+  border: 4px solid darkmagenta;
 }
 
 .image-pointer {
