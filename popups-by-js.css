@@ -51,10 +51,9 @@ div, a {
   z-index: 6;
   top: -45px;
   left: -45px;
-  width: 228px;
+  width: 128px;
   height: 128px;
-  font-size: 96px;
-  line-height: 1.2;
+  line-height: 96px;
   text-align: center;
   color: #fff;
   background-color: darkmagenta;
