@@ -8,6 +8,7 @@ for (let pointer of pointers) {
     gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
     if (!pointer.contains(pageLink)) {
       innerImage.src = pointer.dataset.image;
+      pageLink.href = pointer.dataset.link;
       pointer.append(pageLink);
       if (!pageLink.classList.contains('visualised')) {
         pageLink.classList.add('visualised');
