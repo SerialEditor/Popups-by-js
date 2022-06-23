@@ -80,7 +80,8 @@ body {
   max-width: 600px;
   height: 75vw;
   max-height: 600px;
-  border: 8px solid red;
+  margin: 0 auto;
+  margin-top: 78px;
 }
 
 img {
