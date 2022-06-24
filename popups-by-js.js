@@ -3,6 +3,7 @@ let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
 let gentleHint = document.querySelector('.gentle-hint');
+
 for (let pointer of pointers) {
   pointer.onclick = function() {
     gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
@@ -18,10 +19,8 @@ for (let pointer of pointers) {
 };
 
 window.onblur = function() {
-  for (let pointer of pointers) {
-    if (pointer.classList.contains('visualised')) {
-      pointer.classList.remove('visualised');
-    }
+  if (pageLink.classList.contains('visualised')) {
+    pageLink.classList.remove('visualised');
   }
 };
 
