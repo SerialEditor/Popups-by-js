@@ -15,7 +15,10 @@ for (let pointer of pointers) {
       }
     } else {pageLink.classList.toggle('visualised')}
   }
-  window.onblur = function() {
+};
+
+window.onblur = function() {
+  for (let pointer of pointers) {
     if (pointer.classList.contains('visualised')) {
       pointer.classList.remove('visualised');
     }
