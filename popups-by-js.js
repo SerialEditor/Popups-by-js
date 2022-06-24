@@ -3,6 +3,7 @@ let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
 let gentleHint = document.querySelector('.gentle-hint');
+let startPhrase = gentleHint.textContent;
 
 function removeDisplay() {
   if (pageLink.classList.contains('visualised')) {
@@ -25,6 +26,7 @@ for (let pointer of pointers) {
 };
 
 window.onblur = function() {
+   gentleHint.textContent = startPhrase;
    removeDisplay();
 };
 
