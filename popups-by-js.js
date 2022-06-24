@@ -22,9 +22,6 @@ for (let pointer of pointers) {
       }
     } else {pageLink.classList.toggle('visualised')}
   }
-  pointer.onblur = function() {
-    removeDisplay();
-  }
 };
 
 window.onblur = function() {
