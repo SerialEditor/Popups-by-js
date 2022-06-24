@@ -5,7 +5,8 @@ let pageLink = document.querySelector('.page-link');
 let gentleHint = document.querySelector('.gentle-hint');
 let startPhrase = gentleHint.textContent;
 
-function removeDisplay() {
+function updateDisplay() {
+  gentleHint.textContent = startPhrase;
   if (pageLink.classList.contains('visualised')) {
     pageLink.classList.remove('visualised');
   }
@@ -25,9 +26,15 @@ for (let pointer of pointers) {
   }
 };
 
+window.addEventListener('click', e => {
+  let target = e.target;
+  if (!target.closest('.page-link') && !target.closest('.image-pointer)){
+    updateDisplay();
+  }
+});
+
 window.onblur = function() {
-   gentleHint.textContent = startPhrase;
-   removeDisplay();
+   updateDisplay();
 };
 
 
