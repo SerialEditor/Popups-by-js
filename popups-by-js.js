@@ -26,13 +26,6 @@ for (let pointer of pointers) {
   }
 };
 
-window.addEventListener('click', e => {
-  let target = e.target;
-  if (!target.closest('.page-link') && !target.closest('.image-pointer)){
-    updateDisplay();
-  }
-});
-
 window.onblur = function() {
    updateDisplay();
 };
