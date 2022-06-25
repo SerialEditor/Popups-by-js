@@ -12,6 +12,13 @@ function updateDisplay() {
   }
 };
 
+window.addEventListener('click', e => {
+  const target = e.target;
+  if (!target.closest('.image-pointer')) {
+    gentleHint.textContent = 'Click!';
+  }
+}) 
+
 for (let pointer of pointers) {
   pointer.onclick = function() {
     gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
