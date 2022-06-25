@@ -15,7 +15,7 @@ function updateDisplay() {
 window.addEventListener('click', e => {
   const target = e.target;
   if (!target.closest('.image-pointer')) {
-    gentleHint.textContent = 'Click!';
+    gentleHint.textContent = 'Да не сюда!';
   }
 }) 
 
