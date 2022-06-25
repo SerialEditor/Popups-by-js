@@ -21,7 +21,6 @@ window.addEventListener('click', e => {
 
 for (let pointer of pointers) {
   pointer.onclick = function() {
-    gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
     if (!pointer.contains(pageLink)) {
       innerImage.src = pointer.dataset.image;
       pageLink.href = pointer.dataset.link;
@@ -30,6 +29,9 @@ for (let pointer of pointers) {
         pageLink.classList.add('visualised');
       }
     } else {pageLink.classList.toggle('visualised')}
+    if (pageLink.classList.contains('visualised)) {
+      gentleHint.textContent = 'Кликни снова, чтобы скрыть.';
+    } else {gentleHint.textContent = startPhrase;}
   }
 };
 
