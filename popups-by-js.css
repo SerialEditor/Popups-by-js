@@ -13,7 +13,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 48px;
+  padding: 48px 0;
   border: 8px solid darkmagenta;
 }
 
