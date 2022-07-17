@@ -8,9 +8,10 @@ body {
 }
 
 .container {
+  box-sizing: border- box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 17px;
   align-items: center;
   width: 100%;
   padding: 48px 0;
@@ -32,9 +33,9 @@ body {
   position: absolute;
   z-index: 5;
   width: 45vw;
-  max-width: 350px;
+  max-width: 250px;
   height: 45vw;
-  max-height: 350px;
+  max-height: 250px;
   top: 45px;
   left: 50%;
   margin-bottom: 0;
