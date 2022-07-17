@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  width: calc(100% - 11px);
+  width: calc(100% - 16px);
   padding: 36px 5px;
   border: 4px solid darkmagenta;
 }
@@ -50,9 +50,9 @@ body {
   content: "Go!";
   position: absolute;
   z-index: 6;
-  top: -45px;
-  left: -45px;
-  padding: 8px;
+  top: -25px;
+  left: -25px;
+  padding: 12px;
   text-align: center;
   color: #fff;
   background-color: darkmagenta;
