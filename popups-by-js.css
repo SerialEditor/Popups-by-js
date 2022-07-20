@@ -73,6 +73,13 @@ body {
   margin-top: 78px;
 }
 
+.right-value {
+  padding: 15px 20px;
+  margin-top: 2em;
+  background-color: white;
+  border: 4px solid orange;
+}
+
 img {
   display: block;
   width: 100%;
