@@ -1,7 +1,8 @@
 'use strict';
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
-let pageLink = document.querySelector('.page-link')
+let pageLink = document.querySelector('.page-link');
+let rightValue = document.querySelector('.right-value');
 
 function updateDisplay() {
   if (pageLink.classList.contains('visualised')) {
