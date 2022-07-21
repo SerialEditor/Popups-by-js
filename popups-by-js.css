@@ -73,14 +73,20 @@ body {
   margin-top: 78px;
 }
 
-.right-value {
-  width: 70%;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  width: 75%;
   max-width: 490px;
-  padding: 15px 20px;
   margin: 0 auto;
-  margin-top: 2em;
+  font-size: 16px;
+  text-align: left;
   background-color: white;
-  border: 4px solid orange;
+}
+
+.grid-container div {
+  padding: 8px;
+  border: 2px solid orange;
 }
 
 img {
