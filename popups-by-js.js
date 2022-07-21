@@ -2,7 +2,7 @@
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
-let innerValie = document.querySelector('.inner-value');
+let innerValue = document.querySelector('.inner-value');
 let rightValue = document.querySelector('.right-value');
 
 getInnerValue();
