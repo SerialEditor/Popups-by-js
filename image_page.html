@@ -8,10 +8,11 @@
   <body>
     <div class="big-size-image">
       <img src="images/1.jpg">
+      <div class="src-text" style="padding: 10px; background-color: white;"></div>
     </div>
     <script>
-      let adress = location.search.substring(1);
-      alert(adress);
+      let srcText = document.querySelector('.src-text');
+      srcText.textContent = location.search.substring(1);
     </script>
   </body>
 </html>
