@@ -27,7 +27,7 @@ for (let pointer of pointers) {
         pageLink.classList.add('visualised');
       }
     } else {pageLink.classList.toggle('visualised');}
-    rightValue.textContent = pageLink.getBoundingClientRect().right;
+    rightValue.textContent = Math.trunc(pageLink.getBoundingClientRect().right);
   }
 };
 
