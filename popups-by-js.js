@@ -2,22 +2,13 @@
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
-let innerValue = document.querySelector('.inner-value');
-let rightValue = document.querySelector('.right-value');
 
-getInnerValue();
 
 function updateDisplay() {
   if (pageLink.classList.contains('visualised')) {
     pageLink.classList.remove('visualised');
   }
-  getInnerValue();
-  rightValue.textContent = 0;
 };
-
-function getInnerValue() {
-  innerValue.textContent = Math.trunc(window.innerWidth);
-}
 
 /* window.addEventListener('click', e => {
   const target = e.target;
@@ -26,8 +17,6 @@ function getInnerValue() {
   }
 }) 
 */
-
-window.addEventListener('resize', getInnerValue);
 
 for (let pointer of pointers) {
   pointer.onclick = function() {
@@ -38,7 +27,6 @@ for (let pointer of pointers) {
         pageLink.classList.add('visualised');
       }
     } else {pageLink.classList.toggle('visualised');}
-    rightValue.textContent = Math.trunc(pageLink.getBoundingClientRect().right);
   }
 };
 
