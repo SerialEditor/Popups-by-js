@@ -30,6 +30,10 @@ for (let pointer of pointers) {
   }
 };
 
+innerImage.onclick = function() {
+  location.href = 'image_page.html?' + innerImage.src;
+}
+
 window.onblur = function() {
    updateDisplay();
 };
