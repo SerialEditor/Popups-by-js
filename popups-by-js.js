@@ -15,7 +15,7 @@ function updateDisplay() {
   rightValue.textContent = 0;
 };
 
-function getInnerValue {
+function getInnerValue() {
   innerValue.textContent = Math.trunc(window.innerWidth);
 }
 
