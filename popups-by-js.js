@@ -2,13 +2,22 @@
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
+let innerValie = document.querySelector('.inner-value');
 let rightValue = document.querySelector('.right-value');
+
+getInnerValue();
 
 function updateDisplay() {
   if (pageLink.classList.contains('visualised')) {
     pageLink.classList.remove('visualised');
   }
+  getInnerValue();
+  rightValue.textContent = 0;
 };
+
+function getInnerValue {
+  innerValue.textContent = Math.trunc(window.innerWidth);
+}
 
 /* window.addEventListener('click', e => {
   const target = e.target;
@@ -17,6 +26,8 @@ function updateDisplay() {
   }
 }) 
 */
+
+window.addEventListener('resize', getInnerValue);
 
 for (let pointer of pointers) {
   pointer.onclick = function() {
