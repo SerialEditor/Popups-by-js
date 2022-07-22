@@ -21,6 +21,7 @@ function updateDisplay() {
 for (let pointer of pointers) {
   pointer.onclick = function() {
     if (!pointer.contains(pageLink)) {
+      pageLink.href = pointer.dataset.link;
       innerImage.src = pointer.dataset.image;
       pointer.append(pageLink);
       if (!pageLink.classList.contains('visualised')) {
