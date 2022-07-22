@@ -11,8 +11,10 @@
       <div class="src-text" style="margin-top: 48px; padding: 10px; background-color: white;">Text</div>
     </div>
     <script>
+      let image = document.querySelector('img');
       let srcText = document.querySelector('.src-text');
       srcText.textContent = location.hash[1];
+      image.src = 'images/' + location.hash[1] + '.jpg'
     </script>
   </body>
 </html>
