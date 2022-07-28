@@ -31,7 +31,7 @@ body {
 }
 
 .page-link {
-  display: none;
+  visibility: hidden;
   position: absolute;
   z-index: 5;
   width: 45vw;
@@ -62,7 +62,7 @@ body {
 }
 
 .page-link.visualised {
-  display: block;
+  visibility: visible;
 }
 
 .big-size-image {
