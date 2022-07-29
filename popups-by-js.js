@@ -2,31 +2,26 @@
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
-let windowInnerWidth = document.querySelector('.window-inner-width');
-let pageWidth = document.querySelector('.page-width');
+let different = document.querySelector('.different');
 
-function getDocumentDimensions() {
-  return { 
-    viewport: document.documentElement.clientWidth, 
-    page: document.documentElement.scrollWidth
-  };
+function getDocumentDimensionsDiff() {
+  return (document.documentElement.clientWidth - document.documentElement.scrollWidth); 
 }
 
-function showDocumentDimensions() {
-  let dimensions = getDocumentDimensions();
-  windowInnerWidth.textContent = dimensions.viewport;
-  pageWidth.textContent = dimensions.page;
+function showDocumentDimensionsDiff() {
+  different.textContent = getDocumentDimensionsDiff();
 }
+
+/* function correctPointerPosition() {
+  if () {}
+}
+/*
 
 function clearDisplay() {
   if (pageLink.classList.contains('visualised')) {
     pageLink.classList.remove('visualised');
   }
 };
-
-showDocumentDimensions();
-
-window.addEventListener('resize', showDocumentDimensions); 
 
 /* window.addEventListener('click', e => {
   const target = e.target;
@@ -48,7 +43,7 @@ for (let pointer of pointers) {
         pageLink.classList.add('visualised');
       }
     } else {pageLink.classList.toggle('visualised');}
-    pageWidth.textContent = document.documentElement.scrollWidth;
+    showDocumentDimensionsDiff();
   }
 };
 
