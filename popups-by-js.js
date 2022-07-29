@@ -13,9 +13,7 @@ function showDocumentDimensionsDiff() {
 }
 
 function correctPageLinkPosition() {
-  if (getDocumentDimensionsDiff()) {
-    pageLink.style.left = -50 + '%';
-  }
+    pageLink.style.left = getDocumentDimensionsDiff() + 'px';
 }
 
 function clearDisplay() {
