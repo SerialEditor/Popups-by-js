@@ -11,7 +11,7 @@ function correctPageLinkPosition() {
   const diff = getDocumentDimensionsDiff();
   if (diff) {
     pageLink.style.left = diff + 'px';
-  } else {pageLink.style.left = 0;}
+  } else {pageLink.style.left = 0}
 }
 
 function clearDisplay() {
@@ -27,6 +27,8 @@ function clearDisplay() {
   }
 }) 
 */
+
+window.addEventListener('resize', correctPageLinkPosition);
 
 window.addEventListener('blur', clearDisplay);
 
