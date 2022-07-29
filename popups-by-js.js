@@ -13,7 +13,7 @@ function showDocumentDimensionsDiff() {
 }
 
 function correctPageLinkPosition() {
-  if (!getDocumentDimensionsDiff()) {
+  if (getDocumentDimensionsDiff()) {
     pageLink.style.left = -50 + '%';
   }
 }
