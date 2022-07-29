@@ -2,9 +2,23 @@
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
+let windowInnerWidth = document.querySelector('.window-inner-width');
+let pageWidth = document.querySelector('.page-width');
 
+function getDocumentDimensions() {
+  return { 
+    viewport: document.documentElement.clientWidth, 
+    page: document.documentElement.scrollWidth
+  };
+}
 
-function updateDisplay() {
+function showDocumentDimensions() {
+  let dimensions = getDocumentDimensions();
+  windowInnerWidth.textContent = dimensions.viewport;
+  pageWidth.textContent = dimensions.page;
+}
+
+function clearDisplay() {
   if (pageLink.classList.contains('visualised')) {
     pageLink.classList.remove('visualised');
   }
@@ -13,7 +27,7 @@ function updateDisplay() {
 /* window.addEventListener('click', e => {
   const target = e.target;
   if (!target.closest('.image-pointer')) {
-    gentleHint.textContent = 'Да не сюда!';
+    clearDisplay();
   }
 }) 
 */
@@ -32,7 +46,7 @@ for (let pointer of pointers) {
 };
 
 window.onblur = function() {
-   updateDisplay();
+   clearDisplay();
 };
 
 
