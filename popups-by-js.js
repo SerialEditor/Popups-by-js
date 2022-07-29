@@ -36,8 +36,8 @@ for (let pointer of pointers) {
       if (!pageLink.classList.contains('visualised')) {
         pageLink.classList.add('visualised');
       }
+      correctPageLinkPosition();
     } else {pageLink.classList.toggle('visualised');}
-    correctPageLinkPosition();
   }
 };
 
