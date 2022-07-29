@@ -2,14 +2,9 @@
 let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
-let different = document.querySelector('.different');
 
 function getDocumentDimensionsDiff() {
   return (document.documentElement.clientWidth - document.documentElement.scrollWidth); 
-}
-
-function showDocumentDimensionsDiff() {
-  different.textContent = getDocumentDimensionsDiff();
 }
 
 function correctPageLinkPosition() {
@@ -42,7 +37,6 @@ for (let pointer of pointers) {
         pageLink.classList.add('visualised');
       }
     } else {pageLink.classList.toggle('visualised');}
-    showDocumentDimensionsDiff();
     correctPageLinkPosition();
   }
 };
