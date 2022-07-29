@@ -5,6 +5,7 @@ body {
   text-align: center;
   color: darkmagenta;
   background-color: #ffcc99;
+  scroll-behavior: smooth;
 }
 
 table {
