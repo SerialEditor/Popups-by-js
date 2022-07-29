@@ -48,6 +48,7 @@ for (let pointer of pointers) {
         pageLink.classList.add('visualised');
       }
     } else {pageLink.classList.toggle('visualised');}
+    showDocumentDimensions();
   }
 };
 
