@@ -10,7 +10,7 @@ function getDocumentDimensionsDiff() {
 function correctPageLinkPosition() {
   const diff = getDocumentDimensionsDiff();
   if (diff) {
-    pageLink.style.left = getDocumentDimensionsDiff() + 'px';
+    pageLink.style.left = diff + 'px';
   } else {pageLink.style.left = 50 + '%';}
 }
 
