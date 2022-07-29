@@ -26,6 +26,8 @@ function clearDisplay() {
 
 showDocumentDimensions();
 
+window.addEventListener('resize', showDocumentDimensions); 
+
 /* window.addEventListener('click', e => {
   const target = e.target;
   if (!target.closest('.image-pointer')) {
@@ -33,6 +35,8 @@ showDocumentDimensions();
   }
 }) 
 */
+
+window.addEventListener('blur', clearDisplay);
 
 for (let pointer of pointers) {
   pointer.onclick = function() {
@@ -47,9 +51,6 @@ for (let pointer of pointers) {
   }
 };
 
-window.onblur = function() {
-   clearDisplay();
-};
 
 
 
