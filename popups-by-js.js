@@ -15,7 +15,7 @@ function showDocumentDimensionsDiff() {
 /* function correctPointerPosition() {
   if () {}
 }
-/*
+*/
 
 function clearDisplay() {
   if (pageLink.classList.contains('visualised')) {
