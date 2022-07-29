@@ -8,7 +8,10 @@ function getDocumentDimensionsDiff() {
 }
 
 function correctPageLinkPosition() {
+  const diff = getDocumentDimensionsDiff();
+  if (diff) {
     pageLink.style.left = getDocumentDimensionsDiff() + 'px';
+  } else {pageLink.style.left = 50 + '%';}
 }
 
 function clearDisplay() {
