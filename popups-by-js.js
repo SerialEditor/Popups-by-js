@@ -12,10 +12,11 @@ function showDocumentDimensionsDiff() {
   different.textContent = getDocumentDimensionsDiff();
 }
 
-/* function correctPointerPosition() {
-  if () {}
+function correctPageLinkPosition() {
+  if (!getDocumentDimensionsDiff()) {
+    pageLink.style.left = -50 + '%';
+  }
 }
-*/
 
 function clearDisplay() {
   if (pageLink.classList.contains('visualised')) {
@@ -44,6 +45,7 @@ for (let pointer of pointers) {
       }
     } else {pageLink.classList.toggle('visualised');}
     showDocumentDimensionsDiff();
+    correctPageLinkPosition();
   }
 };
 
