@@ -9,9 +9,10 @@ body {
 
 table {
   border-collapse: collapse;
-  width: 75vw;
+  width: 85vw;
   max-width: 475px;
   font-size: 18px;
+  text-align: left;
 }
 
 td {
