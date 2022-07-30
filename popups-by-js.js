@@ -30,8 +30,6 @@ function clearDisplay() {
 
 window.addEventListener('resize', correctPageLinkPosition);
 
-window.addEventListener('scroll', correctPageLinkPosition);
-
 window.addEventListener('blur', clearDisplay);
 
 for (let pointer of pointers) {
