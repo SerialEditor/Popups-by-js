@@ -74,13 +74,13 @@ td:last-child {
   content: "\27A0";
   position: absolute;
   z-index: 6;
-  top: -4px;
-  left: -4px;
+  top: 0;
+  left: 0;
   padding: 3px 7px;
   text-align: center;
   color: #fff;
   background-color: darkmagenta;
-  border-bottom-right-radius: 8px;
+  opacity: 0.7;
 }
 
 .page-link.visualised {
