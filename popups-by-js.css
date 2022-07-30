@@ -5,7 +5,6 @@ body {
   text-align: center;
   color: darkmagenta;
   background-color: #ffcc99;
-  scroll-behavior: smooth;
 }
 
 /*
@@ -80,7 +79,7 @@ td:last-child {
   text-align: center;
   color: #fff;
   background-color: darkmagenta;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .page-link.visualised {
