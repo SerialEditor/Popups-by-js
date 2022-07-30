@@ -8,6 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/*
 table {
   border-collapse: collapse;
   width: 95vw;
@@ -26,6 +27,7 @@ td {
 td:last-child {
   min-width: 75px;
 }
+*/
 
 .container {
   box-sizing: border-box;
@@ -54,10 +56,10 @@ td:last-child {
   display: none;
   position: absolute;
   z-index: 5;
-  width: 45vw;
-  max-width: 250px;
-  height: 45vw;
-  max-height: 250px;
+  width: 35vw;
+  max-width: 150px;
+  height: 35vw;
+  max-height: 150px;
   top: 45px;
   left: 0;
   margin-bottom: 0;
@@ -69,7 +71,7 @@ td:last-child {
 }
 
 .page-link::after {
-  content: "Go!";
+  content: "\27A0";
   position: absolute;
   z-index: 6;
   top: -4px;
