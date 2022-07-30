@@ -3,15 +3,11 @@ let pointers = document.querySelectorAll('.image-pointer');
 let innerImage = document.querySelector('.inner-image');
 let pageLink = document.querySelector('.page-link');
 
-function getDocumentDimensionsDiff() {
-  return (document.documentElement.clientWidth - document.documentElement.scrollWidth); 
-}
-
 function correctPageLinkPosition() {
-  const diff = getDocumentDimensionsDiff();
+  const diff = document.documentElement.clientWidth - document.documentElement.scrollWidth;
   if (diff) {
-    pageLink.style.left = diff + 'px';
-  } else {pageLink.style.left = 0}
+    pageLink.style.left = 0 + diff + 'px';
+  } else {pageLink.style.left = 0 - 8 + 'px'}
 }
 
 function clearDisplay() {
