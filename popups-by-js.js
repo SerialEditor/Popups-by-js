@@ -6,8 +6,8 @@ let pageLink = document.querySelector('.page-link');
 function correctPageLinkPosition() {
   const diff = document.documentElement.clientWidth - document.documentElement.scrollWidth;
   if (diff) {
-    pageLink.style.left = 0 + diff + 'px';
-  } else {pageLink.style.left = 0 + 1 + 'em'}
+    pageLink.style.left = diff + 'px';
+  } else {pageLink.style.left = 0 + 8 + 'px'}
 }
 
 function clearDisplay() {
